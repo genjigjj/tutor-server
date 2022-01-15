@@ -38,7 +38,7 @@ import java.util.stream.Collectors;
  */
 @Service
 @Slf4j
-public class AuthUserService extends ServiceImpl<UserMapper, User> {
+public class UserAuthService extends ServiceImpl<UserMapper, User> {
 
 
     @Autowired

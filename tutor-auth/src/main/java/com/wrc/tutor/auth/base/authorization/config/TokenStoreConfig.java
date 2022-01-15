@@ -40,10 +40,10 @@ public class TokenStoreConfig {
      * 使用jwt时的配置，默认生效
      */
     @Configuration
-//    @ConditionalOnProperty(prefix = "wrc.security.oauth2", name = "tokenStore", havingValue = "jwt", matchIfMissing = true)
+    @ConditionalOnProperty(prefix = "wrc.security.oauth2", name = "tokenStore", havingValue = "jwt", matchIfMissing = false)
     public static class JwtConfig {
 
-        @Autowired
+        @Autowired(required = false)
         private SecurityProperties securityProperties;
 
         @Bean

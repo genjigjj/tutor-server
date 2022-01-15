@@ -5,7 +5,6 @@ package com.wrc.tutor.auth.base.authorization.config;
 
 
 import com.wrc.tutor.auth.base.authentication.oauth2.SmsCodeTokenGranter;
-import com.wrc.tutor.auth.base.authentication.oauth2.SocialTokenGranter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -54,7 +53,7 @@ public class MyAuthorizationServerConfig extends AuthorizationServerConfigurerAd
 	@Autowired
 	UserDetailsService myUserDetailsService;
 
-    @Autowired
+    @Autowired(required = false)
     private TokenStore tokenStore;
 
     @Autowired(required = false)
@@ -162,7 +161,7 @@ public class MyAuthorizationServerConfig extends AuthorizationServerConfigurerAd
                 .tokenKeyAccess("permitAll()"); //jwt令牌的公钥
     }
 
-    @Autowired
+    @Autowired(required = false)
     private ConnectionFactoryLocator connectionFactoryLocator;
 
 //    配置Token granter, 添加自定义的granter
@@ -172,11 +171,11 @@ public class MyAuthorizationServerConfig extends AuthorizationServerConfigurerAd
                 endpoints.getTokenServices(),
                 endpoints.getClientDetailsService(),
                 endpoints.getOAuth2RequestFactory()));
-        granters.add(new SocialTokenGranter(authenticationManager,
-                endpoints.getTokenServices(),
-                endpoints.getClientDetailsService(),
-                endpoints.getOAuth2RequestFactory(),
-                connectionFactoryLocator));
+//        granters.add(new SocialTokenGranter(authenticationManager,
+//                endpoints.getTokenServices(),
+//                endpoints.getClientDetailsService(),
+//                endpoints.getOAuth2RequestFactory(),
+//                connectionFactoryLocator));
         return new CompositeTokenGranter(granters);
     }
 

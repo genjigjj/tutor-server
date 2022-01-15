@@ -7,7 +7,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.rabbitmq.client.Channel;
 import com.tuyang.beanutils.BeanCopyUtils;
 import com.wrc.tutor.business.auth.entity.query.AppointQuery1;
-import com.wrc.tutor.business.common.config.RabbitConfig;
+import com.wrc.tutor.pay.auth.service.alipay.config.RabbitConfig;
 import com.wrc.tutor.business.common.exception.BusinessException;
 import com.wrc.tutor.common.entity.bo.CashinBO;
 import com.wrc.tutor.common.entity.bo.PayBizContent;

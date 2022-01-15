@@ -1,6 +1,6 @@
-package com.wrc.tutor.auth.base.authentication.social.qq.config;
-
-
+//package com.wrc.tutor.auth.base.authentication.social.qq.config;
+//
+//
 //import com.wrc.tutor.auth.base.authentication.social.qq.connet.QQConnectionFactory;
 //import com.wrc.tutor.auth.base.authentication.social.support.ConnectView;
 //import com.wrc.tutor.auth.base.properties.QQProperties;

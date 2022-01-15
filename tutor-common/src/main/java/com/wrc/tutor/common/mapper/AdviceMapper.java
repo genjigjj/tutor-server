@@ -1,7 +1,7 @@
 package com.wrc.tutor.common.mapper;
 
-import com.wrc.tutor.common.entity.po.Advice;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.wrc.tutor.common.entity.po.Advice;
 
 /**
  * <p>

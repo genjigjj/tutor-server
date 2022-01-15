@@ -4,7 +4,7 @@ import com.tuyang.beanutils.BeanCopyUtils;
 import com.wrc.tutor.common.entity.dto.UserDTO1;
 import com.wrc.tutor.upms.auth.entity.bo.UserBO2;
 import com.wrc.tutor.upms.auth.entity.vo.UserVO;
-import com.wrc.tutor.upms.auth.service.AuthUserService;
+import com.wrc.tutor.upms.auth.service.UserAuthService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
@@ -34,7 +34,7 @@ public class AuthUserController {
 
 
     @Autowired
-    private AuthUserService authUserService;
+    private UserAuthService userAuthService;
 
     /**
      *  获取登录用户信息, 包括 User role permission
@@ -43,7 +43,7 @@ public class AuthUserController {
     public UserVO getUserInfo(){
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         Long id = Long.valueOf((String)authentication.getPrincipal());
-        UserDTO1 userDTO1 = authUserService.getUserInfoById(id);
+        UserDTO1 userDTO1 = userAuthService.getUserInfoById(id);
         return BeanCopyUtils.copyBean(userDTO1,UserVO.class);
     }
 
@@ -52,7 +52,7 @@ public class AuthUserController {
     public void changePassword(@RequestBody UserBO2 userBO){
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         Long id = Long.valueOf((String)authentication.getPrincipal());
-        authUserService.changePassword(id,userBO);
+        userAuthService.changePassword(id,userBO);
     }
 
 }

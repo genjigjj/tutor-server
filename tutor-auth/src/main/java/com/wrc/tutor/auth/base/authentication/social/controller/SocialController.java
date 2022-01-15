@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 public class SocialController {
 
 
-    @Autowired
+    @Autowired(required = false)
     private ProviderSignInUtils providerSignInUtils;
 
     /**

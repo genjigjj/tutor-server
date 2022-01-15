@@ -3,7 +3,7 @@
 <mapper namespace="com.wrc.tutor.system.common.mapper.RouteMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.wrc.tutor.system.common.entity.po.Route">
+    <resultMap id="BaseResultMap" type="com.wrc.tutor.common.entity.po.Route">
         <id column="id" property="id" />
         <result column="parent_id" property="parentId" />
         <result column="name" property="name" />

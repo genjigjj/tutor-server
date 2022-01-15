@@ -37,7 +37,7 @@ public class MyWebSecurityConfig extends WebSecurityConfigurerAdapter {
     private FormAuthenticationSecurityConfig formAuthenticationSecurityConfig;
 
 //    社交登录
-    @Autowired
+    @Autowired(required = false)
     SpringSocialConfigurer imoocSpringSocialConfigurer;
 
 //    验证码
@@ -66,7 +66,7 @@ public class MyWebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.apply(emailCodeAuthenticationSecurityConfig);
 
 //        社交登录登录
-        http.apply(imoocSpringSocialConfigurer);
+        //http.apply(imoocSpringSocialConfigurer);
 
 //       验证码
         http.apply(validateCodeConfig);

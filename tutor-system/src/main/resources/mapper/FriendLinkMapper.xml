@@ -3,7 +3,7 @@
 <mapper namespace="com.wrc.tutor.common.mapper.FriendLinkMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.wrc.tutor.system.common.entity.po.FriendLink">
+    <resultMap id="BaseResultMap" type="com.wrc.tutor.common.entity.po.FriendLink">
         <id column="id" property="id" />
         <result column="name" property="name" />
         <result column="url" property="url" />

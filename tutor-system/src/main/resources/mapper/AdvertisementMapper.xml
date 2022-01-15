@@ -3,7 +3,7 @@
 <mapper namespace="com.wrc.tutor.system.common.mapper.AdvertisementMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.wrc.tutor.system.common.entity.po.Advertisement">
+    <resultMap id="BaseResultMap" type="com.wrc.tutor.common.entity.po.Advertisement">
         <id column="id" property="id" />
         <result column="name" property="name" />
         <result column="type" property="type" />

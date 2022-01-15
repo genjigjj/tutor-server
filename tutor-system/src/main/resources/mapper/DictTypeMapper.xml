@@ -3,7 +3,7 @@
 <mapper namespace="com.wrc.tutor.system.common.mapper.DictTypeMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.wrc.tutor.system.common.entity.po.DictType">
+    <resultMap id="BaseResultMap" type="com.wrc.tutor.common.entity.po.DictType">
         <id column="id" property="id" />
         <result column="code" property="code" />
         <result column="name" property="name" />

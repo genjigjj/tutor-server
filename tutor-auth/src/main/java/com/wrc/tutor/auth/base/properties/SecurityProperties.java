@@ -3,12 +3,10 @@
  */
 package com.wrc.tutor.auth.base.properties;
 
-import org.springframework.boot.context.properties.ConfigurationProperties;
-
 /**
  * 总配置项
  */
-@ConfigurationProperties(prefix = "wrc.security")
+//@ConfigurationProperties(prefix = "wrc.security")
 public class SecurityProperties {
 
 	/**
