@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/configs")
+@RequestMapping("/system/configs")
 @Api("配置接口")
 public class ConfigController {
 

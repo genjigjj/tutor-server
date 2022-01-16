@@ -28,7 +28,7 @@ import java.util.List;
  * @since 2019-12-19
  */
 @RestController
-@RequestMapping("/categories")
+@RequestMapping("/business/categories")
 @Api("科目接口")
 public class CategoryController {
 

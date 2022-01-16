@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/notices")
+@RequestMapping("/system/notices")
 @Api("公告接口")
 public class NoticeController {
 

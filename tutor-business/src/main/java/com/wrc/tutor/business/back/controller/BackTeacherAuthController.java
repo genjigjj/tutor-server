@@ -32,7 +32,7 @@ import java.util.List;
  * @since 2020-01-27
  */
 @RestController
-@RequestMapping("back/teacherAuths")
+@RequestMapping("/business/back/teacherAuths")
 public class BackTeacherAuthController {
 
     @Autowired

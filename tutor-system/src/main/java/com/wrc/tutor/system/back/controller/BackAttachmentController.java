@@ -24,7 +24,7 @@ import java.io.IOException;
 import java.util.List;
 
 @RestController
-@RequestMapping("back/attachments")
+@RequestMapping("/system/back/attachments")
 @Api("附件接口")
 public class BackAttachmentController {
 

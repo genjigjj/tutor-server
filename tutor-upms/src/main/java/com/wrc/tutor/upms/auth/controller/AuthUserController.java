@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Validated
 @RestController
-@RequestMapping("auth/users")
+@RequestMapping("/upms/auth/users")
 @Slf4j
 public class AuthUserController {
 

@@ -60,10 +60,10 @@ public class MyWebSecurityConfig extends WebSecurityConfigurerAdapter {
         formAuthenticationSecurityConfig.configure(http);
 
 //        短信验证码登录
-        http.apply(smsCodeAuthenticationSecurityConfig);
+        //http.apply(smsCodeAuthenticationSecurityConfig);
 
 //       邮箱登录
-        http.apply(emailCodeAuthenticationSecurityConfig);
+        //http.apply(emailCodeAuthenticationSecurityConfig);
 
 //        社交登录登录
         //http.apply(imoocSpringSocialConfigurer);
@@ -82,6 +82,8 @@ public class MyWebSecurityConfig extends WebSecurityConfigurerAdapter {
 //                放行登录等端点
                 .and().authorizeRequests().antMatchers(
                         "/logout",
+                        "/login",
+                "/auth/form",
                 "/auth/**",
                 "/code/**",
                 "/index.html",

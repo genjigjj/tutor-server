@@ -29,7 +29,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("back/friendLinks")
+@RequestMapping("/system/back/friendLinks")
 @Api("友情链接")
 public class BackFriendLinkController {
 

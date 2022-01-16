@@ -65,8 +65,7 @@ public class GlobalExceptionHandler {
             errorsMap.put( t.getVariableName(),t.getMessage());
             log.info("请求路径参数不能为空");
         } else {
-            e.printStackTrace();
-            log.info("未知参数错误");
+            log.error("未知参数错误", e);
         }
         return new ErrorResult<>(ErrorResultEnum.INVALID_PARAMETER,errorsMap);
     }

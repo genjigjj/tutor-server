@@ -25,15 +25,15 @@ public class FormAuthenticationSecurityConfig {
 //          登录页面
 //			.loginPage("/login.html")
 //          提交表单登录的地址
-			.loginProcessingUrl("/auth/form")
+                .loginProcessingUrl("/auth/form")
 //           用户名参数名
-            .usernameParameter("username")
+                .usernameParameter("username")
 //           密码参数名
-            .passwordParameter("password")
+                .passwordParameter("password")
 //          设置登录成功处理器
-            .successHandler(authenticationSuccessHandler)
+                .successHandler(authenticationSuccessHandler)
 //          设置登录失败处理器
-            .failureHandler(authenticationFailureHandler);
-	}
+                .failureHandler(authenticationFailureHandler);
+    }
 
 }

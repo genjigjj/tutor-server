@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/friendLinks")
+@RequestMapping("/system/friendLinks")
 @Api("友情链接接口")
 public class FriendLinkController {
 

@@ -31,7 +31,7 @@ import java.util.List;
  * @since 2020-01-27
  */
 @RestController
-@RequestMapping("back/cashouts")
+@RequestMapping("/pay/back/cashouts")
 public class BackCashoutController {
 
     @Autowired

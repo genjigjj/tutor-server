@@ -1,11 +1,11 @@
-package com.wrc.tutor.system.front.controller;
+package com.wrc.tutor.upms.auth.controller;
 
 
 import com.tuyang.beanutils.BeanCopyUtils;
 import com.wrc.tutor.common.entity.po.Route;
-import com.wrc.tutor.system.front.entity.query.RouteQuery1;
-import com.wrc.tutor.system.front.entity.vo.RouteVO;
-import com.wrc.tutor.system.front.service.RouteService;
+import com.wrc.tutor.upms.auth.service.RouteService;
+import com.wrc.tutor.upms.front.entity.query.RouteQuery1;
+import com.wrc.tutor.upms.front.entity.vo.RouteVO;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/routes")
+@RequestMapping("/upms/routes")
 @Api("后台管理系统路由")
 public class RouteController {
 

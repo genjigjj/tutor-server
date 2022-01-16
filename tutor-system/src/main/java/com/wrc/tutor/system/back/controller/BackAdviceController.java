@@ -29,7 +29,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("back/advices")
+@RequestMapping("/system/back/advices")
 @Api("建议接口")
 public class BackAdviceController {
 

@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/advertisements")
+@RequestMapping("/system/advertisements")
 @Api("大广告接口")
 public class AdvertisementController {
 

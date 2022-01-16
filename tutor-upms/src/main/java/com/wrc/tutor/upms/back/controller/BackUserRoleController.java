@@ -35,7 +35,7 @@ public class BackUserRoleController {
      * 根据用户id查询用户的角色
      */
     @PreAuthorize("hasAuthority('upms:userRole:select')")
-    @GetMapping("back/users/{userId}/roles")
+    @GetMapping("/upms/back/users/{userId}/roles")
     List<RoleDTO> listRolesByUserId(@PathVariable("userId") Long userId){
         return backUserRoleService.listRolesByUserId(userId);
     }
@@ -45,7 +45,7 @@ public class BackUserRoleController {
      * 根据用户id和角色id列表为用户添加角色
      */
     @PreAuthorize("hasAuthority('upms:userRole:update')")
-    @PutMapping("back/users/{userId}/roles")
+    @PutMapping("/upms/back/users/{userId}/roles")
     void saveUserRolesByUserId(@PathVariable("userId") Long userId,@RequestBody List<Long> roleIds){
         backUserRoleService.saveUserRolesByUserId(userId,roleIds);
     }

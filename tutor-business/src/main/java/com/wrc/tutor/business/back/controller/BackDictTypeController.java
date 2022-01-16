@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("back/dictTypes")
+@RequestMapping("/business/back/dictTypes")
 @Api("字典接口")
 public class BackDictTypeController {
 

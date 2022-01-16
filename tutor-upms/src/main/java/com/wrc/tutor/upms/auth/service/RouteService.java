@@ -1,10 +1,10 @@
-package com.wrc.tutor.system.front.service;
+package com.wrc.tutor.upms.auth.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.wrc.tutor.common.entity.po.Route;
 import com.wrc.tutor.common.mapper.RouteMapper;
-import com.wrc.tutor.system.front.entity.query.RouteQuery1;
+import com.wrc.tutor.upms.front.entity.query.RouteQuery1;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

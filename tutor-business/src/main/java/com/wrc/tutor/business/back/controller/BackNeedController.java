@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("back/needs")
+@RequestMapping("/business/back/needs")
 @Api("需求接口")
 public class BackNeedController {
 

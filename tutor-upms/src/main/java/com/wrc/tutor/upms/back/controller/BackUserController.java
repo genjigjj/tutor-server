@@ -43,7 +43,7 @@ import java.util.List;
  */
 @Validated
 @RestController
-@RequestMapping("back/users")
+@RequestMapping("/upms/back/users")
 @Slf4j
 public class BackUserController {
 

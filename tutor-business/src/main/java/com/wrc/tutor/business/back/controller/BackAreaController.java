@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("back/areas")
+@RequestMapping("/business/back/areas")
 @Api("地区接口")
 public class BackAreaController {
 

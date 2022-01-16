@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2019-08-23
  */
 @RestController
-@RequestMapping("back/organisations")
+@RequestMapping("/upms/back/organisations")
 public class BackOrganisationController {
 
 }

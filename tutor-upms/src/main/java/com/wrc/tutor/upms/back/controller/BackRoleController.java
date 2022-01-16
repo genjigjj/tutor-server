@@ -36,7 +36,7 @@ import java.util.List;
  * @since 2019-08-23
  */
 @RestController
-@RequestMapping("back/roles")
+@RequestMapping("/upms/back/roles")
 public class BackRoleController {
 
     @Autowired

@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/dicts")
+@RequestMapping("/system/dicts")
 @Api("字典接口")
 public class DictController {
 

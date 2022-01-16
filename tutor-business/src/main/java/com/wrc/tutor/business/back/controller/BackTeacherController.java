@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("back/teachers")
+@RequestMapping("/business/back/teachers")
 @Api("老师接口")
 public class BackTeacherController {
 

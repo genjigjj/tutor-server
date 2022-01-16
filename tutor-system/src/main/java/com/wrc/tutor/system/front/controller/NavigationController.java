@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/navigations")
+@RequestMapping("/system/navigations")
 @Api("导航栏接口")
 public class NavigationController {
 

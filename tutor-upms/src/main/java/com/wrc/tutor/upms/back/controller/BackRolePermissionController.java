@@ -35,7 +35,7 @@ public class BackRolePermissionController {
      * 根据角色id查询角色的权限列表
      */
     @PreAuthorize("hasAuthority('upms:rolePermission:select')")
-    @GetMapping("back/roles/{roleId}/permissions")
+    @GetMapping("/upms/back/roles/{roleId}/permissions")
     List<PermissionDTO> listPermissionsByRoleId(@PathVariable("roleId") Long roleId){
         List<PermissionDTO> permissionDTOs = backRolePermissionService.listPermissionsByRoleId(roleId);
         return permissionDTOs;
@@ -46,7 +46,7 @@ public class BackRolePermissionController {
      * 根据角色id和权限id列表为角色添加权限
      */
     @PreAuthorize("hasAuthority('upms:rolePermission:update')")
-    @PutMapping("back/roles/{roleId}/permissions")
+    @PutMapping("/upms/back/roles/{roleId}/permissions")
     void saveRolePermissionsByRoleId(@PathVariable("roleId") Long roleId,@RequestBody List<Long> permissionIds){
         backRolePermissionService.saveRolePermissionsByRoleId(roleId,permissionIds);
     }

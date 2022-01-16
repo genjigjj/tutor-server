@@ -30,7 +30,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("back/advertisements2")
+@RequestMapping("/system/back/advertisements2")
 @Api("大广告接口")
 public class BackAdvertisementController {
 

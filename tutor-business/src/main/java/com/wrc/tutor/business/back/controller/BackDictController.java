@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("back/dicts")
+@RequestMapping("/business/back/dicts")
 @Api("字典接口")
 public class BackDictController {
 

@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("back/categories")
+@RequestMapping("/business/back/categories")
 @Api("课程接口")
 public class BackCategoryController {
 

@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("back/navigations")
+@RequestMapping("/system/back/navigations")
 @Api("导航接口")
 public class BackNavigationController {
 
