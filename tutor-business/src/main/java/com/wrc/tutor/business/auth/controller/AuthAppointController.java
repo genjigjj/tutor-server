@@ -31,7 +31,7 @@ import java.util.List;
  * @since 2020-01-27
  */
 @RestController
-@RequestMapping("auth/appoints/me")
+@RequestMapping("/business/auth/appoints/me")
 public class AuthAppointController {
 
     @Autowired

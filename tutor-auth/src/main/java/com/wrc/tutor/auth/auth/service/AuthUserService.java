@@ -3,7 +3,7 @@ package com.wrc.tutor.auth.auth.service;
 import com.tuyang.beanutils.BeanCopyUtils;
 import com.wrc.tutor.auth.auth.entity.dto.UserDTO;
 import com.wrc.tutor.auth.base.authentication.code.core.Manager;
-import com.wrc.tutor.auth.common.exception.BusinessException;
+import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.auth.front.entity.bo.FeignUserBO1;
 import com.wrc.tutor.auth.front.entity.vo.FeignUserInfo;
 import com.wrc.tutor.auth.front.service.UserService;

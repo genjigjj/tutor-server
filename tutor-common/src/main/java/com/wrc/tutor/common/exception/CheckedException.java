@@ -1,4 +1,4 @@
-package com.wrc.tutor.pay.common.exception;
+package com.wrc.tutor.common.exception;
 
 public class CheckedException extends Exception {
 

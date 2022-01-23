@@ -3,7 +3,7 @@ package com.wrc.tutor.system.auth.service;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.wrc.tutor.common.util.FileUtils;
 import com.wrc.tutor.common.entity.po.Attachment;
-import com.wrc.tutor.system.common.exception.BusinessException;
+import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.common.mapper.AttachmentMapper;
 import com.wrc.tutor.system.common.properties.QiNiuProperties;
 import com.qiniu.common.QiniuException;

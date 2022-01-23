@@ -7,7 +7,7 @@ import com.wrc.tutor.upms.back.entity.bo.RoleBO1;
 import com.wrc.tutor.upms.back.entity.dto.RoleDTO;
 import com.wrc.tutor.upms.back.entity.query.RoleQuery1;
 import com.wrc.tutor.upms.back.service.BackRoleService;
-import com.wrc.tutor.upms.common.exception.ResourceNotFondException;
+import com.wrc.tutor.common.exception.ResourceNotFondException;
 import com.wrc.tutor.upms.common.validate.group.Insert;
 import com.wrc.tutor.upms.common.validate.group.Update;
 import org.springframework.beans.factory.annotation.Autowired;

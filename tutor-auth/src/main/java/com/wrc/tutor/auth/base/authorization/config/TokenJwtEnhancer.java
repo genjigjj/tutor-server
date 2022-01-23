@@ -13,10 +13,7 @@ public class TokenJwtEnhancer implements TokenEnhancer {
     @Override
     public OAuth2AccessToken enhance(OAuth2AccessToken accessToken, OAuth2Authentication authentication) {
         Map<String, Object> info = new HashMap<>();
-        info.put("test", "value");
-
         ((DefaultOAuth2AccessToken)accessToken).setAdditionalInformation(info);
-
         return accessToken;
     }
 

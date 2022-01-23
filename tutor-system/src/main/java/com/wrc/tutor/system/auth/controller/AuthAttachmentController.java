@@ -20,7 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 
 @RestController
-@RequestMapping("auth/attachments")
+@RequestMapping("/system/auth/attachments")
 @Api("附件接口")
 public class AuthAttachmentController {
 

@@ -32,7 +32,7 @@ import com.wrc.tutor.common.entity.response.RefundQueryResponse;
 import com.wrc.tutor.common.entity.response.RefundResponse;
 import com.wrc.tutor.common.entity.response.TransferResponse;
 import com.wrc.tutor.pay.auth.service.alipay.config.RabbitConfig;
-import com.wrc.tutor.pay.common.exception.BusinessException;
+import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.pay.common.properties.PayProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.MessageDeliveryMode;

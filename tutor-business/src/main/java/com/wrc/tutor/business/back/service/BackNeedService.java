@@ -8,7 +8,7 @@ import com.wrc.tutor.business.back.entity.bo.NeedBO1;
 import com.wrc.tutor.business.back.entity.query.NeedQuery1;
 import com.wrc.tutor.common.entity.dto.NeedDTO;
 import com.wrc.tutor.common.entity.po.Need;
-import com.wrc.tutor.business.common.exception.BusinessException;
+import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.common.mapper.NeedMapper;
 import com.wrc.tutor.common.entity.query.PageQuery;
 import com.wrc.tutor.common.entity.vo.MyPage;

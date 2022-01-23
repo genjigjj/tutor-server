@@ -36,7 +36,7 @@ import java.util.List;
  */
 @Validated
 @RestController
-@RequestMapping("auth/needs/me")
+@RequestMapping("/business/auth/needs/me")
 public class AuthNeedController {
 
     @Autowired

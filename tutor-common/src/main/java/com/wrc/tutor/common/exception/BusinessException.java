@@ -1,4 +1,4 @@
-package com.wrc.tutor.common.expection;
+package com.wrc.tutor.common.exception;
 
 public class BusinessException extends RuntimeException {
 

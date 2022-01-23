@@ -33,7 +33,7 @@ import java.util.List;
  * @since 2020-01-27
  */
 @RestController
-@RequestMapping("auth/messages/me")
+@RequestMapping("/business/auth/messages/me")
 public class AuthMessageController {
 
     @Autowired

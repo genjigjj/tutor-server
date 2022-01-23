@@ -9,7 +9,7 @@ import com.wrc.tutor.upms.back.entity.dto.UserExisted;
 import com.wrc.tutor.upms.back.entity.dto.UserInfo;
 import com.wrc.tutor.upms.back.entity.query.UserQuery1;
 import com.wrc.tutor.upms.back.service.BackUserService;
-import com.wrc.tutor.upms.common.exception.ResourceNotFondException;
+import com.wrc.tutor.common.exception.ResourceNotFondException;
 import com.wrc.tutor.upms.common.validate.group.Insert;
 import com.wrc.tutor.upms.common.validate.group.Patch;
 import com.wrc.tutor.upms.common.validate.group.Update;

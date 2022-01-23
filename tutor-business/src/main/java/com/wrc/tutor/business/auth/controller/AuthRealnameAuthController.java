@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2020-01-27
  */
 @RestController
-@RequestMapping("auth/realnameAuths/me")
+@RequestMapping("/business/auth/realnameAuths/me")
 public class AuthRealnameAuthController {
 
     @Autowired

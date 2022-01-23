@@ -15,7 +15,7 @@ import com.wrc.tutor.common.mapper.UserMapper;
 import com.wrc.tutor.common.mapper.UserRoleMapper;
 import com.wrc.tutor.upms.auth.entity.bo.UserBO2;
 import com.wrc.tutor.common.entity.dto.UserDTO1;
-import com.wrc.tutor.upms.common.exception.BusinessException;
+import com.wrc.tutor.common.exception.BusinessException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

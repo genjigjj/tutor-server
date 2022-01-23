@@ -30,7 +30,7 @@ import java.util.List;
  * @since 2020-01-27
  */
 @RestController
-@RequestMapping("auth/studentCollects/me")
+@RequestMapping("/business/auth/studentCollects/me")
 public class AuthStudentCollectController {
 
 

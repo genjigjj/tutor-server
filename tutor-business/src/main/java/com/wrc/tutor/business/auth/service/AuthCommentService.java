@@ -10,7 +10,7 @@ import com.wrc.tutor.common.entity.po.Appoint;
 import com.wrc.tutor.common.entity.po.Comment;
 import com.wrc.tutor.common.entity.po.Need;
 import com.wrc.tutor.common.entity.po.Teacher;
-import com.wrc.tutor.business.common.exception.BusinessException;
+import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.common.mapper.AppointMapper;
 import com.wrc.tutor.common.mapper.CommentMapper;
 import com.wrc.tutor.common.mapper.NeedMapper;

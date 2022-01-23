@@ -3,7 +3,7 @@ package com.wrc.tutor.auth.front.service;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.tuyang.beanutils.BeanCopyUtils;
-import com.wrc.tutor.auth.common.exception.BusinessException;
+import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.auth.front.entity.bo.FeignUserBO1;
 import com.wrc.tutor.auth.front.entity.bo.UserBO1;
 import com.wrc.tutor.auth.front.entity.dto.UserDTO;

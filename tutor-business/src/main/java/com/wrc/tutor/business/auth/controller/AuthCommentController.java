@@ -33,7 +33,7 @@ import java.util.List;
  * @since 2020-01-27
  */
 @RestController
-@RequestMapping("auth/comments/me")
+@RequestMapping("/business/auth/comments/me")
 public class AuthCommentController {
 
     @Autowired

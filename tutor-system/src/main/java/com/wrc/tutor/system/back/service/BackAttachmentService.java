@@ -10,7 +10,7 @@ import com.wrc.tutor.common.util.FileUtils;
 import com.wrc.tutor.system.back.entity.bo.AttachmentBO1;
 import com.wrc.tutor.system.back.entity.query.AttachmentQuery1;
 import com.wrc.tutor.common.entity.po.Attachment;
-import com.wrc.tutor.system.common.exception.BusinessException;
+import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.common.mapper.AttachmentMapper;
 import com.wrc.tutor.system.common.properties.QiNiuProperties;
 import com.qiniu.common.QiniuException;

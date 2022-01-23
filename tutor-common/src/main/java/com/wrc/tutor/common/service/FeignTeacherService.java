@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.tuyang.beanutils.BeanCopyUtils;
 import com.wrc.tutor.common.entity.bo.FeignTeacherBO1;
 import com.wrc.tutor.common.entity.po.Teacher;
-import com.wrc.tutor.common.expection.BusinessException;
+import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.common.mapper.TeacherMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

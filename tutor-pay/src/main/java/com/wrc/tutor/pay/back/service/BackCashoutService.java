@@ -18,7 +18,7 @@ import com.wrc.tutor.common.util.key.IdWorker;
 import com.wrc.tutor.pay.auth.service.alipay.AlipayService;
 import com.wrc.tutor.pay.back.entity.bo.CashoutBO1;
 import com.wrc.tutor.pay.back.entity.query.CashoutQuery1;
-import com.wrc.tutor.pay.common.exception.BusinessException;
+import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.pay.common.mapper.CashinMapper;
 import com.wrc.tutor.pay.common.mapper.CashoutMapper;
 import org.apache.commons.lang3.StringUtils;

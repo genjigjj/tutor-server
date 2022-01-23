@@ -7,7 +7,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.tuyang.beanutils.BeanCopyUtils;
 import com.wrc.tutor.business.auth.entity.bo.NeedBO1;
 import com.wrc.tutor.business.auth.entity.query.NeedQuery1;
-import com.wrc.tutor.business.common.exception.BusinessException;
+import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.common.entity.bo.PayBizContent;
 import com.wrc.tutor.common.entity.dto.NeedDTO;
 import com.wrc.tutor.common.entity.po.Appoint;

@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2020-01-27
  */
 @RestController
-@RequestMapping("auth/teacherCollects")
+@RequestMapping("/business/auth/teacherCollects")
 public class AuthTeacherCollectController {
 
 }

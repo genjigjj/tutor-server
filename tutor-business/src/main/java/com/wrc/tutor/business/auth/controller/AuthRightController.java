@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2020-01-27
  */
 @RestController
-@RequestMapping("auth/rights")
+@RequestMapping("/business/auth/rights")
 public class AuthRightController {
 
 }

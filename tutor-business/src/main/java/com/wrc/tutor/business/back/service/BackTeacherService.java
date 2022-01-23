@@ -9,7 +9,7 @@ import com.wrc.tutor.business.back.entity.bo.TeacherBO1;
 import com.wrc.tutor.business.back.entity.query.TeacherQuery1;
 import com.wrc.tutor.common.entity.dto.TeacherDTO;
 import com.wrc.tutor.common.entity.po.Teacher;
-import com.wrc.tutor.business.common.exception.BusinessException;
+import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.common.mapper.TeacherMapper;
 import com.wrc.tutor.common.entity.query.PageQuery;
 import com.wrc.tutor.common.entity.vo.MyPage;

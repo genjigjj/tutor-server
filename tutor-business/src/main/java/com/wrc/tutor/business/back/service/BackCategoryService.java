@@ -5,7 +5,7 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.wrc.tutor.business.back.entity.bo.CategoryBO1;
 import com.wrc.tutor.business.back.entity.query.CategoryQuery1;
 import com.wrc.tutor.common.entity.po.Category;
-import com.wrc.tutor.business.common.exception.BusinessException;
+import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.common.mapper.CategoryMapper;
 import com.tuyang.beanutils.BeanCopyUtils;
 import org.springframework.stereotype.Service;

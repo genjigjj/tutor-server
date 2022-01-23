@@ -8,7 +8,7 @@ import com.wrc.tutor.business.back.entity.bo.StudentAuthBO1;
 import com.wrc.tutor.business.back.entity.query.StudentAuthQuery1;
 import com.wrc.tutor.common.entity.po.StudentAuth;
 import com.wrc.tutor.common.entity.po.Teacher;
-import com.wrc.tutor.business.common.exception.BusinessException;
+import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.common.mapper.StudentAuthMapper;
 import com.wrc.tutor.common.mapper.TeacherMapper;
 import com.wrc.tutor.common.entity.query.PageQuery;

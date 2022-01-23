@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2020-01-27
  */
 @RestController
-@RequestMapping("auth/dictTypes")
+@RequestMapping("/business/auth/dictTypes")
 public class AuthDictTypeController {
 
 }

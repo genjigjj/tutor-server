@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("auth/teachers/me")
+@RequestMapping("/business/auth/teachers/me")
 @Api("老师接口")
 public class AuthTeacherController {
 

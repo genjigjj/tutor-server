@@ -7,7 +7,7 @@ import com.wrc.tutor.upms.back.entity.bo.PermissionBO1;
 import com.wrc.tutor.upms.back.entity.dto.PermissionDTO;
 import com.wrc.tutor.upms.back.entity.query.PermissionQuery1;
 import com.wrc.tutor.upms.back.service.BackPermissionService;
-import com.wrc.tutor.upms.common.exception.ResourceNotFondException;
+import com.wrc.tutor.common.exception.ResourceNotFondException;
 import com.wrc.tutor.upms.common.validate.group.Insert;
 import com.wrc.tutor.upms.common.validate.group.Update;
 import org.springframework.beans.factory.annotation.Autowired;

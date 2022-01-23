@@ -1,10 +1,10 @@
 package com.wrc.tutor.system.common.handler;
 
 
-import com.wrc.tutor.system.common.exception.BusinessException;
-import com.wrc.tutor.system.common.exception.ResourceNotFondException;
 import com.wrc.tutor.common.entity.ErrorResult;
 import com.wrc.tutor.common.enums.ErrorResultEnum;
+import com.wrc.tutor.common.exception.BusinessException;
+import com.wrc.tutor.system.common.exception.ResourceNotFondException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.AccessDeniedException;
@@ -75,7 +75,6 @@ public class GlobalExceptionHandler {
     @ExceptionHandler({
             BusinessException.class
     })
-    @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ErrorResult<Map<String,String>> handleValidationException(BusinessException e) {
         Map<String,String> errorsMap = new HashMap<>();
         errorsMap.put("error",e.getMessage());
@@ -119,5 +118,14 @@ public class GlobalExceptionHandler {
     }
     //TODO 方法不允许 405异常
     //TODO 服务器错误 500异常
+
+    @ExceptionHandler({
+            Exception.class
+    })
+    public ErrorResult<Map<String,String>> handleAccessDeniedException(Exception e) {
+        Map<String,String> errorsMap = new HashMap<>();
+        errorsMap.put("error","服务器内部错误");
+        return new ErrorResult<>(ErrorResultEnum.SERVER_ERROR,errorsMap);
+    }
 
 }

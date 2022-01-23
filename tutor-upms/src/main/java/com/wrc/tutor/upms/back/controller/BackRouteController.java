@@ -7,7 +7,7 @@ import com.wrc.tutor.upms.back.entity.bo.RouteBO1;
 import com.wrc.tutor.upms.back.entity.dto.RouteDTO;
 import com.wrc.tutor.upms.back.entity.query.RouteQuery1;
 import com.wrc.tutor.upms.back.service.BackRouteService;
-import com.wrc.tutor.upms.common.exception.ResourceNotFondException;
+import com.wrc.tutor.common.exception.ResourceNotFondException;
 import com.wrc.tutor.upms.common.validate.group.Insert;
 import com.wrc.tutor.upms.common.validate.group.Update;
 import org.springframework.beans.factory.annotation.Autowired;

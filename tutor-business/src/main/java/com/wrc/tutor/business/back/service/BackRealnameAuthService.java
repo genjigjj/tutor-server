@@ -8,7 +8,7 @@ import com.wrc.tutor.business.back.entity.bo.RealnameAuthBO1;
 import com.wrc.tutor.business.back.entity.query.RealnameAuthQuery1;
 import com.wrc.tutor.common.entity.po.RealnameAuth;
 import com.wrc.tutor.common.entity.po.Teacher;
-import com.wrc.tutor.business.common.exception.BusinessException;
+import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.common.mapper.RealnameAuthMapper;
 import com.wrc.tutor.common.mapper.TeacherMapper;
 import com.wrc.tutor.common.entity.query.PageQuery;

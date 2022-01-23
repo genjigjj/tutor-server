@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("auth/areas/me")
+@RequestMapping("/business/auth/areas/me")
 @Api("地区接口")
 public class AuthAreaController {
 
