@@ -6,14 +6,12 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.tuyang.beanutils.BeanCopyUtils;
 import com.wrc.tutor.business.auth.entity.bo.CashoutBO1;
 import com.wrc.tutor.business.auth.entity.bo.TeacherBO1;
-import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.business.common.exception.ResourceNotFondException;
 import com.wrc.tutor.common.entity.bo.CashoutBO;
 import com.wrc.tutor.common.entity.dto.TeacherDTO;
 import com.wrc.tutor.common.entity.po.Teacher;
+import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.common.mapper.TeacherMapper;
-import com.wrc.tutor.pay.feign.service.FeignCashoutService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -22,9 +20,6 @@ import java.time.LocalDateTime;
 
 @Service
 public class AuthTeacherService extends ServiceImpl<TeacherMapper, Teacher> {
-
-    @Autowired
-    FeignCashoutService iFeignCashout;
 
     public TeacherDTO getDTOById(Long id) throws ResourceNotFondException {
         //传进来的id是userId 不是TeacherId 先由userId获取TeacherId 再查
@@ -81,7 +76,6 @@ public class AuthTeacherService extends ServiceImpl<TeacherMapper, Teacher> {
         cashoutBO1.setBalance(teacher.getBalance()); //余额
         cashoutBO1.setCashoutType(1); //支付宝
         cashoutBO1.setCreateTime(LocalDateTime.now());
-        iFeignCashout.saveCashout(cashoutBO1);
         getBaseMapper().updateById(teacher);
     }
 }

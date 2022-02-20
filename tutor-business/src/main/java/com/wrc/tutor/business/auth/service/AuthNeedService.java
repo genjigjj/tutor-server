@@ -7,17 +7,15 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.tuyang.beanutils.BeanCopyUtils;
 import com.wrc.tutor.business.auth.entity.bo.NeedBO1;
 import com.wrc.tutor.business.auth.entity.query.NeedQuery1;
-import com.wrc.tutor.common.exception.BusinessException;
-import com.wrc.tutor.common.entity.bo.PayBizContent;
 import com.wrc.tutor.common.entity.dto.NeedDTO;
 import com.wrc.tutor.common.entity.po.Appoint;
 import com.wrc.tutor.common.entity.po.Need;
 import com.wrc.tutor.common.entity.query.PageQuery;
 import com.wrc.tutor.common.entity.vo.MyPage;
+import com.wrc.tutor.common.exception.BusinessException;
 import com.wrc.tutor.common.mapper.AppointMapper;
 import com.wrc.tutor.common.mapper.NeedMapper;
 import com.wrc.tutor.common.util.key.IdWorker;
-import com.wrc.tutor.pay.feign.service.FeignAlipayService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -40,9 +38,6 @@ public class AuthNeedService extends ServiceImpl<NeedMapper, Need> {
 
     @Autowired
     AppointMapper appointMapper;
-
-    @Autowired
-    FeignAlipayService iFeignAliPay;
 
     public boolean isMyPublish(Long id, Long needId) {
         Need need = getBaseMapper().selectById(needId);
@@ -108,23 +103,23 @@ public class AuthNeedService extends ServiceImpl<NeedMapper, Need> {
 
 
 //        生成支付地址
-        PayBizContent payBizContent = new PayBizContent();
-        payBizContent.setOutTradeNo(chose.get().getTradeNo()); //订单号
-        payBizContent.setTotalAmount(chose.get().getTotalPrice()); //金额
-        payBizContent.setSubject("闽师家教" + chose.get().getNickname() +"上门支教"); //订单名称
+//        PayBizContent payBizContent = new PayBizContent();
+//        payBizContent.setOutTradeNo(chose.get().getTradeNo()); //订单号
+//        payBizContent.setTotalAmount(chose.get().getTotalPrice()); //金额
+//        payBizContent.setSubject("闽师家教" + chose.get().getNickname() +"上门支教"); //订单名称
         //payBizContent.setTimeoutExpress("1m"); //该笔订单允许的最晚付款时间，逾期将关闭交易。取值范围：1m～15d。m-分钟，h-小时，d-天，1c-当天（1c-当天的情况下，无论交易何时创建，都在0点关闭）。 该参数数值不接受小数点， 如 1.5h，可转换为 90m
 //    body 可选 订单描述
 //    private String body;
 //    time_expire 可选 订单绝对超时时间 格式为yyyy-MM-dd HH:mm:ss	2016-12-31 10:05:01
 //    private LocalDateTime timeExpire;
 
-        String url=null;
-        try {
-            url =  iFeignAliPay.pay(payBizContent); //TODO 这里其他异常为处理
-        } catch (Exception e) {
-            throw new BusinessException(e.getMessage());
-        }
-        return url;
+//        String url=null;
+//        try {
+//            url =  iFeignAliPay.pay(payBizContent); //TODO 这里其他异常为处理
+//        } catch (Exception e) {
+//            throw new BusinessException(e.getMessage());
+//        }
+        return null;
     }
 
     public Need saveNeed(Long id, NeedBO1 needBO) {

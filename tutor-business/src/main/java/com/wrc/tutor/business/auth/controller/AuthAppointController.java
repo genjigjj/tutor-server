@@ -139,14 +139,9 @@ public class AuthAppointController {
 
 
     @ApiOperation(value="学生端获取支付宝付款跳转地址") //需要调用支付服务
-    @GetMapping("{appointId}/student/payRedirectUrl")
-    public String getPayRedirectUrl(@PathVariable("appointId") Long appointId){
-
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        Long id = Long.valueOf((String)authentication.getPrincipal());
-
-        String url = authAppointService.getPayRedirectUrl(id,appointId);
-        return url;
+    @GetMapping("{appointId}/student/payOrder")
+    public boolean getPayRedirectUrl(@PathVariable("appointId") Long appointId){
+        return authAppointService.paySuccessProcess(appointId);
     }
 
 
