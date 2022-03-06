@@ -11,11 +11,12 @@ import com.wrc.tutor.common.entity.vo.MyPage;
 import com.wrc.tutor.common.mapper.NavigationMapper;
 import com.wrc.tutor.system.back.entity.bo.NavigationBO1;
 import com.wrc.tutor.system.front.entity.query.NavigationQuery1;
+import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;
 
 /**
  * <p>
- *  服务实现类
+ * 服务实现类
  * </p>
  *
  * @author wrc
@@ -59,10 +60,8 @@ public class BackNavigationService extends ServiceImpl<NavigationMapper, Navigat
     }
 
     public void myPatch(NavigationBO1 bo) {
-
-        Navigation updating = BeanCopyUtils.copyBean(bo,Navigation.class);
-
+        Navigation updating = new Navigation();
+        BeanUtils.copyProperties(bo, updating);
         getBaseMapper().updateById(updating);
-
     }
 }

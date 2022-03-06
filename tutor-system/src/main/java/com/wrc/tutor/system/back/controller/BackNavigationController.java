@@ -73,14 +73,18 @@ public class BackNavigationController {
     public MyPage<NavigationVO> page(PageQuery pageQuery, NavigationQuery1 query){
         MyPage<Navigation> pagePO = backNavigationService.myPage(pageQuery, query);
         List<Navigation> records = pagePO.getRecords();
-
-//        转换成我们的分页对象
-        MyPage<NavigationVO> pageVO = BeanCopyUtils.copyBean(pagePO, MyPage.class);
-
+        records.forEach(navigation -> {
+            String role = navigation.getRole();
+            if ("all".equals(role)) {
+                navigation.setRole("全部");
+            } else if ("student".equals(role)) {
+               navigation.setRole("学员");
+            } else if ("teacher".equals(role)) {
+                navigation.setRole("教员");
+            }
+        });
 //        将PO转换成VO
-        List<NavigationVO> vos = BeanCopyUtils.copyList(records, NavigationVO.class);
-        pageVO.setRecords(vos);
-        return pageVO;
+        return BeanCopyUtils.copyBean(pagePO, MyPage.class);
     }
 
 }

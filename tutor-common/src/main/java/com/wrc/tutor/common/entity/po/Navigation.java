@@ -61,6 +61,8 @@ public class Navigation implements Serializable {
      */
     private Integer status;
 
+    private String role;
+
     /**
      * 创建时间
      */

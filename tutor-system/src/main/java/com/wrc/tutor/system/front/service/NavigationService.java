@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  * <p>
- *  服务实现类
+ * 服务实现类
  * </p>
  *
  * @author wrc
@@ -21,7 +21,7 @@ import java.util.List;
 public class NavigationService extends ServiceImpl<NavigationMapper, Navigation> {
 
     public List<Navigation> myList(NavigationQuery1 navigationQuery) {
-        QueryWrapper<Navigation> queryWrapper = new QueryWrapper<>();
-        return getBaseMapper().selectList(queryWrapper);
+        return getBaseMapper().selectList(new QueryWrapper<Navigation>().eq("status", true)
+                .and(queryWrapper -> queryWrapper.eq("role", navigationQuery.getRole()).or().eq("role", "all")));
     }
 }

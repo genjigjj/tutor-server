@@ -48,4 +48,7 @@ public class NavigationQuery1 implements Serializable {
     @ApiModelProperty(value = "修改时间")
     private LocalDateTime updateTime;
 
+    @ApiModelProperty(value = "角色")
+    private String role;
+
 }
